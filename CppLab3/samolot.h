@@ -31,6 +31,6 @@ public:
 	static int pobierz_liczba_w_powietrzu(); //metoda static
 
 	//uzupe�nij co potrzeba; wykonaj zaprzyja�nienia 
-
+	friend std::ostream& operator<<(std::ostream& out, const Samolot& samolot);
 
 };

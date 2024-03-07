@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "lotnisko.h"
+//#include "lotnisko.h"
 #include "samolot.h"
 
 int main()
@@ -44,7 +44,7 @@ int main()
 	cout << "s3 startowa� " << s3.pobierz_starty() << " razy" << endl;	//1
 	cout << "Wszystkich start�w " << s1.start() << endl;	//3: 2 razy s1, 1 raz s3
 	cout << "Samolot�w w powietrzu " << Samolot::pobierz_liczba_w_powietrzu() << endl;	//2: s1, s3
-
+	
 
 	cout << endl << "ETAP 2 ----------------------------------------" << endl << endl;
 	/*

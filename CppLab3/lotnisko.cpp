@@ -42,6 +42,7 @@ bool Lotnisko::zezwol_na_start(Samolot& s) {
 				samoloty[j] = samoloty[j + 1];
 			}
 			samoloty[MAX_LICZBA_SAMOLOTOW - 1] = nullptr;
+			liczba_samolotow--;
 
 			return true;
 		}
@@ -66,4 +67,21 @@ std::ostream& operator<<(std::ostream& out, Lotnisko& lotnisko) {
 	}
 
 	return out;
+}
+
+int Lotnisko::pobierz_liczba_samolotow() {
+	return liczba_samolotow;
+}
+
+Samolot* Lotnisko::operator[](int i) {
+	return samoloty[i];
+}
+
+void Lotnisko::naprawa(Samolot& s) const {
+	if (s.status == Samolot::status_samolotu::WYLADOWAL) {
+		s.liczba_startow = 0;
+		s.liczba_pasazerow = 0;
+		s.port_docelowy = nullptr;
+		s.status = Samolot::status_samolotu::PO_NAPRAWIE;
+	}
 }

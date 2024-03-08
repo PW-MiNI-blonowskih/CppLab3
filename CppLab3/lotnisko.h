@@ -20,10 +20,11 @@ public:
 	bool operator+=(Samolot& s);
 	bool zezwol_na_start(Samolot& s);
 	void przekieruj(Samolot& s, const char* port);
+	int pobierz_liczba_samolotow();
 
-	//void naprawa(Samolot& s) const;
+	void naprawa(Samolot& s) const;
 
 	//uzupe�nij potrzeba? (ETAP 3)
 	friend std::ostream& operator<<(std::ostream& out, Lotnisko& lotnisko);
-
+	Samolot* operator[](int i);
 };

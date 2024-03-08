@@ -109,7 +109,6 @@ int main()
 	cout << "Wszystkich startow " << s8.start() << endl;
 	cout << "Samolotow w powietrzu " << Samolot::pobierz_liczba_w_powietrzu() << endl;
 
-	/*
 	
 	cout << endl << "ETAP 3 ----------------------------------------" << endl << endl;
 
@@ -121,6 +120,7 @@ int main()
 		if (s1.pobierz_starty() >= Samolot::MAX_LICZBA_STARTOW) break;
 		s1.przygotuj_do_startu(0, 1, "Szczecin");
 	}
+
 	cout << s1 << endl;
 	cout << "s1 wylatywa� " << s1.pobierz_starty() << " razy" << endl;
 	
@@ -137,15 +137,16 @@ int main()
 	cout << endl << "Samoloty przed napraw�: ";
 	cout << lot_1 << endl;
 
+	
 	////////////////////////////////////////////////////////////////////////////////////
 	// co trzeba dopisa� do klas, by poni�szy fragment by� poprawny?
 	for (int i = 0; i < lot_1.pobierz_liczba_samolotow(); i++)
 	{
-		if (lot_1[i]->pobierz_starty() >= Samolot::MAX_LICZBA_STARTOW) lot_1.naprawa(*(lot_1[i]));
+		if (lot_1[i]->pobierz_starty() >= Samolot::MAX_LICZBA_STARTOW) 
+			lot_1.naprawa(*(lot_1[i]));
 	}
 	////////////////////////////////////////////////////////////////////////////////////
 	cout << endl << "Samoloty po naprawie: ";
 	cout << lot_1 << endl;
-	*/
 	
 }

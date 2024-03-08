@@ -36,5 +36,5 @@ public:
 	//uzupe�nij co potrzeba; wykonaj zaprzyja�nienia 
 	friend std::ostream& operator<<(std::ostream& out, const Samolot& samolot);
 	friend void Lotnisko::przekieruj(Samolot& s, const char* port);
-
+	friend void Lotnisko::naprawa(Samolot& s) const;
 };

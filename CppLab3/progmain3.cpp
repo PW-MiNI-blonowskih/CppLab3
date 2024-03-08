@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//#include "lotnisko.h"
 #include "samolot.h"
+#include "lotnisko.h"
 
 int main()
 {
@@ -47,7 +47,6 @@ int main()
 	
 
 	cout << endl << "ETAP 2 ----------------------------------------" << endl << endl;
-	/*
 	Lotnisko lot_1;
 	lot_1 += s1;	//leci i wyl�dowa�
 	lot_1 += s2;
@@ -110,7 +109,8 @@ int main()
 	cout << "Wszystkich startow " << s8.start() << endl;
 	cout << "Samolotow w powietrzu " << Samolot::pobierz_liczba_w_powietrzu() << endl;
 
-
+	/*
+	
 	cout << endl << "ETAP 3 ----------------------------------------" << endl << endl;
 
 	cout << s1 << endl;
